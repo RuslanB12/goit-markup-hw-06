@@ -583,6 +583,36 @@ color: var(--accent-color);
    transition: fill 250ms var(--timing-function);
 }
 
+.form{
+   display: flex;
+   flex-direction: column;
+
+   margin-left: 93px;
+}
+
+.button-form{
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   margin-left: 12px;
+   padding: 10px 29px;
+   border-radius: 4px;
+   border: 1px solid var(--accent-color);
+   min-width: 200px;
+   height: 50px;
+
+   color: var(--white-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
+   cursor: pointer;
+
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+}
+
 /* Модалка */
 
 .backdrop{
@@ -636,6 +666,16 @@ opacity: 0;
    cursor: pointer;
 
    background-color:rgba(255, 255, 255, 1);
+}
+
+.form-action{
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+}
+
+.form-action label{
+   margin-bottom: 4px;
 }
 
 /* Портфолио */
@@ -693,6 +733,10 @@ opacity: 0;
    color: var(--white-color);
 
    transition: opasity 250ms var(--timing-function);
+}
+
+.link-card{
+transition: box-shadow 250ms var(--timing-function);
 }
 
 .link-card:focus,
