@@ -245,6 +245,7 @@
                </ul>
             </address>
          </div>
+
          <div class="block">
             <p class="join">Присоединяйтесь</p>
             <ul class="list actions holder">
@@ -263,11 +264,19 @@
             </ul>
          </div>
 
-         <form class="form">
-            <label for="email">Подпишитесь на рассылку</label>
-            <input type="email" name="email" id="email" placeholder="E-mail">
+         <form class="footer-form">
+            <div class="box-form">
+               <label for="email">Подпишитесь на рассылку</label>
+               <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+
+            <button type="submit" class="button-form">Подписаться
+               <svg class="icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#envelope"></use>
+               </svg></button>
          </form>
-         <button type="submit" class="button-form">Подписаться</button>
+
+
 
       </div>
    </footer>
@@ -278,25 +287,35 @@
          <button type="button" class="close-button" data-modal-close>
             <img src="./images/form/close.svg" alt="кнопка">
          </button>
-         <form action="" class="form-action">
-            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+         <form class="form-action" autocomplete="on">
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-            <label for="name">Имя</label>
-            <input type="name" id="name">
+            <ul class="form">
+               <li class="form-field">
+                  <label for="name">Имя</label>
+                  <input type="text" id="name" autofocus>
+               </li>
+               <li class="form-field">
+                  <label for="tel">Телефон</label>
+                  <input type="tel" id="tel">
+               </li>
+               <li class="form-field">
+                  <label for="mail">Почта</label>
+                  <input type="email" id="mail">
+               </li>
+               <li class="form-field">
+                  <label for="comment">Комментарий</label>
+                  <textarea name="coment" id="comment" placeholder="Введите текст"></textarea>
+               </li>
+            </ul>
 
-            <label for="tel">Телефон</label>
-            <input type="tel" id="tel">
+            <p class="policy">
+               <input type="checkbox" id="policy" name="policy">
+               <label for="policy">Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="policy-link">Условия договора</a></label>
+            </p>
 
-            <label for="mail">Почта</label>
-            <input type="email" id="mail">
-
-            <label for="coment">Комментарий</label>
-            <textarea name="coment" id="coment" rows="10" placeholder="Введите текст"></textarea>
-
-            <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            <input type="radio">
-
-            <button type="submit" class="button-form">Отправить</button>
+            <button type="submit" class="primary-button submit">Отправить</button>
          </form>
 
       </div>
